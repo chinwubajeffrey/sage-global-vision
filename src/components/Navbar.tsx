@@ -38,7 +38,11 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="SAGE Global Consult" className="h-12 w-auto brightness-0 invert" />
+            <img
+              src={logo}
+              alt="SAGE Global Consult"
+              className="h-15 w-auto bg-sage"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -74,7 +78,9 @@ const Navbar = () => {
               />
               <motion.span
                 className="block h-[2px] bg-current"
-                animate={menuOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
+                animate={
+                  menuOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }
+                }
                 transition={{ duration: 0.2 }}
               />
             </div>
