@@ -61,14 +61,14 @@ const Index = () => {
   return (
     <main>
       {/* Hero */}
-      <section className="relative h-screen flex items-center section-dark overflow-hidden">
+      <section className="relative md:h-screen h-full flex items-center section-dark md:pt-10 pt-[7rem]">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg})` }}
         >
           <div className="absolute inset-0 bg-midnight/60" />
         </div>
-        <div className="container mx-auto px-6 lg:px-12 relative z-10">
+        <div className="container mx-auto pt-0 pb-10 lg:pt-10 md:pt-auto px-6 lg:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}

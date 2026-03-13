@@ -7,7 +7,7 @@ interface PageHeroProps {
 }
 
 const PageHero = ({ title, subtitle, backgroundImage }: PageHeroProps) => (
-  <section className="relative h-[60vh] min-h-[400px] flex items-end section-dark overflow-hidden">
+  <section className="relative h-[60vh] min-h-[400px] flex items-end section-dark overflow-hidden pt-100">
     {backgroundImage && (
       <div
         className="absolute inset-0 bg-cover bg-center"
