@@ -38,11 +38,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img
-              src={logo}
-              alt="SAGE Global Consult"
-              className="h-15 w-auto bg-sage"
-            />
+            <img src={logo} alt="SAGE Global Consult" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Nav */}

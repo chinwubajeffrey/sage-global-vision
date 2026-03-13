@@ -7,10 +7,26 @@ import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
 const services = [
-  { title: "Urban Planning", description: "Master plans and zoning strategies that shape sustainable, livable cities for generations to come." },
-  { title: "Architecture", description: "Bold, purposeful design that balances form, function, and environmental responsibility." },
-  { title: "Engineering", description: "Structural and civil engineering solutions that bring ambitious visions to buildable reality." },
-  { title: "Real Estate Development", description: "End-to-end development advisory from feasibility through delivery and asset management." },
+  {
+    title: "Urban Planning",
+    description:
+      "Master plans and zoning strategies that shape sustainable, livable cities for generations to come.",
+  },
+  {
+    title: "Architecture",
+    description:
+      "Bold, purposeful design that balances form, function, and environmental responsibility.",
+  },
+  {
+    title: "Engineering",
+    description:
+      "Structural and civil engineering solutions that bring ambitious visions to buildable reality.",
+  },
+  {
+    title: "Real Estate Development",
+    description:
+      "End-to-end development advisory from feasibility through delivery and asset management.",
+  },
 ];
 
 const stats = [
@@ -21,9 +37,24 @@ const stats = [
 ];
 
 const featuredProjects = [
-  { title: "Accra Central District Masterplan", location: "Accra, Ghana", category: "Urban Planning", image: project2 },
-  { title: "Zenith Towers Residential Complex", location: "Lagos, Nigeria", category: "Architecture", image: project1 },
-  { title: "Continental Business Park", location: "Nairobi, Kenya", category: "Real Estate", image: project3 },
+  {
+    title: "Accra Central District Masterplan",
+    location: "Accra, Ghana",
+    category: "Urban Planning",
+    image: project2,
+  },
+  {
+    title: "Zenith Towers Residential Complex",
+    location: "Lagos, Nigeria",
+    category: "Architecture",
+    image: project1,
+  },
+  {
+    title: "Continental Business Park",
+    location: "Nairobi, Kenya",
+    category: "Real Estate",
+    image: project3,
+  },
 ];
 
 const Index = () => {
@@ -48,7 +79,9 @@ const Index = () => {
               Urban and Regional Planning
             </p>
             <h1 className="heading-xl text-midnight-foreground mb-8">
-              Shaping Cities.<br />Building Futures.
+              Shaping Cities.
+              <br />
+              Building Futures.
             </h1>
             <p className="body-lg text-machinery mb-12 max-w-xl">
               SAGE Global Consult is a multi-disciplinary consultancy delivering
@@ -59,7 +92,10 @@ const Index = () => {
               <Link to="/projects" className="btn-primary">
                 View Our Projects
               </Link>
-              <Link to="/contact" className="btn-outline text-midnight-foreground border-midnight-foreground">
+              <Link
+                to="/contact"
+                className="btn-outline text-midnight-foreground border-midnight-foreground"
+              >
                 Get a Consultation
               </Link>
             </div>
@@ -76,10 +112,10 @@ const Index = () => {
             </ScrollReveal>
             <ScrollReveal className="lg:col-span-7 lg:col-start-6" delay={0.15}>
               <p className="body-lg text-muted-foreground mb-6">
-                Founded with a singular vision to transform the built environment
-                across the African continent, SAGE Global Consult brings together
-                expertise in urban planning, architecture, engineering, and real
-                estate development under one roof.
+                Founded with a singular vision to transform the built
+                environment across the African continent, SAGE Global Consult
+                brings together expertise in urban planning, architecture,
+                engineering, and real estate development under one roof.
               </p>
               <p className="body-md text-muted-foreground">
                 We work with governments, institutional investors, and private
@@ -97,7 +133,9 @@ const Index = () => {
       <section className="section-dark py-24 lg:py-32">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal>
-            <h2 className="heading-lg text-midnight-foreground mb-16">Our Disciplines</h2>
+            <h2 className="heading-lg text-midnight-foreground mb-16">
+              Our Disciplines
+            </h2>
           </ScrollReveal>
           <div className="overflow-x-auto pb-4 -mx-6 px-6 lg:mx-0 lg:px-0">
             <div className="flex gap-6 lg:grid lg:grid-cols-2 min-w-max lg:min-w-0">
@@ -107,7 +145,9 @@ const Index = () => {
                     <h3 className="heading-sm text-midnight-foreground mb-4">
                       {service.title}
                     </h3>
-                    <p className="body-md text-machinery">{service.description}</p>
+                    <p className="body-md text-machinery">
+                      {service.description}
+                    </p>
                   </div>
                 </ScrollReveal>
               ))}
@@ -140,7 +180,10 @@ const Index = () => {
           <ScrollReveal>
             <div className="flex items-end justify-between mb-16">
               <h2 className="heading-lg text-foreground">Latest Projects</h2>
-              <Link to="/projects" className="nav-link pb-1 text-sage hidden md:block">
+              <Link
+                to="/projects"
+                className="nav-link pb-1 text-sage hidden md:block"
+              >
                 View All Projects
               </Link>
             </div>
@@ -159,8 +202,12 @@ const Index = () => {
                   <span className="font-body text-xs uppercase tracking-widest text-sage">
                     {project.category}
                   </span>
-                  <h3 className="heading-sm text-foreground mt-2">{project.title}</h3>
-                  <p className="body-sm text-muted-foreground mt-1">{project.location}</p>
+                  <h3 className="heading-sm text-foreground mt-2">
+                    {project.title}
+                  </h3>
+                  <p className="body-sm text-muted-foreground mt-1">
+                    {project.location}
+                  </p>
                 </Link>
               </ScrollReveal>
             ))}
@@ -175,10 +222,10 @@ const Index = () => {
             <ScrollReveal className="lg:col-span-8">
               <blockquote>
                 <p className="heading-md text-midnight-foreground leading-relaxed">
-                  "SAGE Global Consult delivered a masterplan that transformed our
-                  vision for the district into a viable, investable reality. Their
-                  cross-disciplinary team understood both the technical and
-                  political complexities."
+                  "SAGE Global Consult delivered a masterplan that transformed
+                  our vision for the district into a viable, investable reality.
+                  Their cross-disciplinary team understood both the technical
+                  and political complexities."
                 </p>
                 <footer className="mt-8">
                   <p className="body-md text-midnight-foreground font-semibold">
@@ -190,7 +237,10 @@ const Index = () => {
                 </footer>
               </blockquote>
             </ScrollReveal>
-            <ScrollReveal className="lg:col-span-3 lg:col-start-10 flex items-end" delay={0.2}>
+            <ScrollReveal
+              className="lg:col-span-3 lg:col-start-10 flex items-end"
+              delay={0.2}
+            >
               <Link to="/testimonials" className="nav-link pb-1 text-sage">
                 Read More Testimonials
               </Link>
@@ -207,10 +257,13 @@ const Index = () => {
               Ready to Build the Future?
             </h2>
             <p className="body-lg text-sage-foreground/80 mb-10 max-w-xl mx-auto">
-              Let's discuss how SAGE Global Consult can bring your next project to
-              life.
+              Let's discuss how SAGE Global Consult can bring your next project
+              to life.
             </p>
-            <Link to="/contact" className="btn-outline text-sage-foreground border-sage-foreground">
+            <Link
+              to="/contact"
+              className="btn-outline text-sage-foreground border-sage-foreground"
+            >
               Get a Consultation
             </Link>
           </ScrollReveal>
