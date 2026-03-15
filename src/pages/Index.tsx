@@ -137,21 +137,19 @@ const Index = () => {
               Our Disciplines
             </h2>
           </ScrollReveal>
-          <div className="overflow-x-auto pb-4 -mx-6 px-6 lg:mx-0 lg:px-0">
-            <div className="flex gap-6 lg:grid lg:grid-cols-2 min-w-max lg:min-w-0">
-              {services.map((service, i) => (
-                <ScrollReveal key={service.title} delay={i * 0.1}>
-                  <div className="w-72 lg:w-auto border border-machinery/20 p-8 card-hover">
-                    <h3 className="heading-sm text-midnight-foreground mb-4">
-                      {service.title}
-                    </h3>
-                    <p className="body-md text-machinery">
-                      {service.description}
-                    </p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {services.map((service, i) => (
+              <ScrollReveal key={service.title} delay={i * 0.1}>
+                <div className="border border-machinery/20 p-8 card-hover">
+                  <h3 className="heading-sm text-midnight-foreground mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="body-md text-machinery">
+                    {service.description}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
