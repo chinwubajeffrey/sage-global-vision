@@ -3,29 +3,61 @@ import ScrollReveal from "@/components/ScrollReveal";
 import aboutHero from "@/assets/about-hero.jpg";
 
 const values = [
-  { title: "Precision", description: "Every detail matters. We apply rigorous analysis and meticulous execution to deliver solutions that endure." },
-  { title: "Integration", description: "Our multi-disciplinary model ensures that planning, design, and engineering work in concert from day one." },
-  { title: "Impact", description: "We measure success not just in built area, but in the lasting positive change our projects create for communities." },
-  { title: "Integrity", description: "We build trust through transparency, honest counsel, and unwavering commitment to our clients' long-term interests." },
+  {
+    title: "Precision",
+    description:
+      "Every detail matters. We apply rigorous analysis and meticulous execution to deliver solutions that endure.",
+  },
+  {
+    title: "Integration",
+    description:
+      "Our multi-disciplinary model ensures that planning, design, and engineering work in concert from day one.",
+  },
+  {
+    title: "Impact",
+    description:
+      "We measure success not just in built area, but in the lasting positive change our projects create for communities.",
+  },
+  {
+    title: "Integrity",
+    description:
+      "We build trust through transparency, honest counsel, and unwavering commitment to our clients' long-term interests.",
+  },
 ];
 
 const team = [
-  { name: "Nana Akua Mensah", role: "Founding Director & Chief Planner" },
+  { name: "Nwafor Emmanuel", role: "Founding Director & Chief Planner" },
   { name: "Emeka Okafor", role: "Head of Architecture" },
   { name: "Fatima Al-Hassan", role: "Director of Engineering" },
   { name: "Kofi Annan-Poku", role: "Head of Real Estate Development" },
   { name: "Amara Diallo", role: "Senior Urban Designer" },
-  { name: "Tendai Moyo", role: "Project Manager" },
+  { name: "Chinwuba Jeffrey", role: "Software Engineer" },
 ];
 
 const milestones = [
-  { year: "2017", event: "SAGE Global Consult founded in Accra, Ghana." },
-  { year: "2018", event: "First major urban masterplan commissioned for Greater Accra Metropolitan Area." },
-  { year: "2019", event: "Expanded operations to Lagos, Nigeria and Nairobi, Kenya." },
-  { year: "2020", event: "Launched integrated engineering division." },
-  { year: "2022", event: "Completed 15th major project across 8 African nations." },
-  { year: "2024", event: "Established real estate development advisory practice." },
-  { year: "2025", event: "Pan-African portfolio surpasses 20 transformative projects." },
+  { year: "2025", event: "SAGE Global Consult founded in Accra, Ghana." },
+  {
+    year: "2025",
+    event:
+      "First major urban masterplan commissioned for Greater Accra Metropolitan Area.",
+  },
+  {
+    year: "2025",
+    event: "Expanded operations to Lagos, Nigeria and Nairobi, Kenya.",
+  },
+  { year: "2025", event: "Launched integrated engineering division." },
+  {
+    year: "2025",
+    event: "Completed 15th major project across 8 African nations.",
+  },
+  {
+    year: "2026",
+    event: "Established real estate development advisory practice.",
+  },
+  {
+    year: "2026",
+    event: "Pan-African portfolio surpasses 20 transformative projects.",
+  },
 ];
 
 const About = () => {
@@ -46,7 +78,7 @@ const About = () => {
             </ScrollReveal>
             <ScrollReveal className="lg:col-span-7 lg:col-start-6" delay={0.15}>
               <p className="body-lg text-muted-foreground mb-6">
-                SAGE Global Consult was founded in 2017 with a clear mandate: to
+                SAGE Global Consult was founded in 2025 with a clear mandate: to
                 bring world-class urban planning and development expertise to
                 Africa's rapidly growing cities.
               </p>
@@ -73,7 +105,9 @@ const About = () => {
       <section className="section-dark py-24 lg:py-32">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal>
-            <h2 className="heading-lg text-midnight-foreground mb-16">Core Values</h2>
+            <h2 className="heading-lg text-midnight-foreground mb-16">
+              Core Values
+            </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             {values.map((value, i) => (
@@ -100,7 +134,9 @@ const About = () => {
                   <h3 className="font-display text-xl font-semibold text-foreground">
                     {member.name}
                   </h3>
-                  <p className="body-sm text-muted-foreground mt-1">{member.role}</p>
+                  <p className="body-sm text-muted-foreground mt-1">
+                    {member.role}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}
@@ -112,12 +148,14 @@ const About = () => {
       <section className="section-dark py-24 lg:py-32">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal>
-            <h2 className="heading-lg text-midnight-foreground mb-16">Milestones</h2>
+            <h2 className="heading-lg text-midnight-foreground mb-16">
+              Milestones
+            </h2>
           </ScrollReveal>
           <div className="space-y-12 max-w-3xl">
             {milestones.map((item, i) => (
               <ScrollReveal key={item.year} delay={i * 0.08}>
-                <div className="flex gap-8 items-start">
+                <div className="flex gap-8 items-center">
                   <span className="heading-md text-sage shrink-0 w-20">
                     {item.year}
                   </span>

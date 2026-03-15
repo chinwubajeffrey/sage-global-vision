@@ -8,7 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <img src={logo} alt="SAGE Global Consult" className="h-10 w-auto mb-6" />
+            <img
+              src={logo}
+              alt="SAGE Global Consult"
+              className="h-10 w-auto mb-6"
+            />
             <p className="body-sm text-machinery max-w-xs">
               Shaping cities and communities through integrated urban planning,
               architecture, engineering, and real estate development.
@@ -46,10 +50,10 @@ const Footer = () => {
               Contact
             </h4>
             <div className="flex flex-col gap-3 body-sm text-machinery">
-              <p>12 Independence Avenue</p>
-              <p>Accra, Ghana</p>
-              <p>info@sageglobalconsult.com</p>
-              <p>+233 30 277 8800</p>
+              <p>Km 8, Enugu -Abakaliki Express Way</p>
+              <p> Abakaliki, Ebonyi State</p>
+              <p>emmanwafor57@gmail.com</p>
+              <p>+234 803 548 5995</p>
             </div>
             {/* Social */}
             <div className="flex gap-4 mt-6">
@@ -68,7 +72,8 @@ const Footer = () => {
 
         <div className="border-t border-machinery/20 pt-8">
           <p className="body-sm text-machinery/60 text-center">
-            © {new Date().getFullYear()} SAGE Global Consult. All rights reserved.
+            © {new Date().getFullYear()} SAGE Global Consult. All rights
+            reserved.
           </p>
         </div>
       </div>
