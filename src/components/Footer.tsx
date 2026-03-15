@@ -75,6 +75,8 @@ const Footer = () => {
             © {new Date().getFullYear()} SAGE Global Consult. All rights
             reserved.
           </p>
+          <br />
+          <p>Built by Velto</p>
         </div>
       </div>
     </footer>
