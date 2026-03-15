@@ -75,7 +75,7 @@ const Navbar = () => {
               <motion.span
                 className="block h-[2px] bg-current"
                 animate={
-                  menuOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }
+                  menuOpen ? { rotate: -45, y: -3 } : { rotate: 0, y: 0 }
                 }
                 transition={{ duration: 0.2 }}
               />
