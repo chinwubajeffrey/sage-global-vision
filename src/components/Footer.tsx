@@ -76,7 +76,9 @@ const Footer = () => {
             reserved.
           </p>
           <br />
-          <p>Built by Velto</p>
+          <p className="body-sm text-machinery/60 text-center">
+            Built by Velto
+          </p>
         </div>
       </div>
     </footer>
